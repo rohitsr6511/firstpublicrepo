@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JenkinsDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0cc08197a3fd2edc998fc90512c159329f534f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("JenkinsDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JenkinsDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
