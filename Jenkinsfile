@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Publish the app to a folder
-                    bat 'dotnet publish -c Release -o C:\Users\saini\Desktop\jenkisndeploy'
+                    bat 'dotnet publish -c Release -o C:\\Users\\saini\\Desktop\\jenkisndeploy'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Run the .NET console app
-                    bat 'C:\Users\saini\Desktop\jenkisndeploy\JenkinsDemo.exe'
+                    bat 'C:\\Users\\saini\\Desktop\\jenkisndeploy\\JenkinsDemo.exe'
                 }
             }
         }
