@@ -1,19 +1,29 @@
 pipeline {
     agent any
+
     stages {
-        stage('Restore') {
-            steps {
-                bat 'dotnet restore'
-            }
-        }
         stage('Build') {
             steps {
-                bat 'dotnet build'
+                script {
+                    // Build the .NET console app
+                    bat 'dotnet build'
+                }
             }
         }
-        stage('Test') {
+        stage('Publish') {
             steps {
-                bat 'dotnet test'
+                script {
+                    // Publish the app to a folder
+                    bat 'dotnet publish -c Release -o C:\Users\saini\Desktop\jenkisndeploy'
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    // Run the .NET console app
+                    bat 'C:\Users\saini\Desktop\jenkisndeploy\JenkinsDemo.exe'
+                }
             }
         }
     }
